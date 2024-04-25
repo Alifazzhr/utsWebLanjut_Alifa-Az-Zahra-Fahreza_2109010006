@@ -31,3 +31,9 @@ Route::get('/tambahproduk', function () {
     $jumlahproduk = count($jenisProduk);
     return view('tambahproduk', compact('jenisProduk', 'jumlahproduk'));
 });
+
+Route::get('/tambahproduk', function () {
+    $jenisProduk = ['Jenis Produk', 'Alat Tulis', 'Elektronik', 'Sembako'];
+    $jumlahproduk = count($jenisProduk);
+    return view('tambahproduk', compact('jenisProduk', 'jumlahproduk'));
+});
